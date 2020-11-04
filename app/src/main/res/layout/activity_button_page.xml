@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/gradient_back"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ButtonPage">
+
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="48dp"
+        android:text="@string/welcome"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.164"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <!-- need to change the color from black-->
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/ibtnTaxi"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:height="10dp"
+                android:background="@drawable/button_custom"
+                android:padding="20dp"
+                app:srcCompat="@drawable/taxi" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="@string/taxi_service"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/ibtnFood"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:height="10dp"
+                android:background="@drawable/button_custom"
+                android:padding="20dp"
+                app:srcCompat="@drawable/service"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="@string/food_service"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="120dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <!-- need to change the color from black-->
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/ibtnLaundry"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:height="10dp"
+                android:background="@drawable/button_custom"
+                android:padding="20dp"
+                app:srcCompat="@drawable/laundry" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="@string/laundry_service"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/ibtnRoom"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:height="10dp"
+                android:background="@drawable/button_custom"
+                android:padding="20dp"
+                app:srcCompat="@drawable/janitor" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="@string/room_service"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/complaints"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:background="#650303"
+        android:padding="5dp"
+        android:text="@string/complaints"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:background="@drawable/gradient_back_2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="2dp"
+            android:id="@+id/profile"
+            android:clickable="true"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/person_val" />
+        <ImageView
+            android:layout_marginBottom="2dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginEnd="80dp"
+            android:layout_marginTop="6dp"
+            android:clickable="true"
+            android:id="@+id/home"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/home" />
+        <ImageView
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="6dp"
+            android:id="@+id/tasks"
+            android:clickable="true"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/task" />
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

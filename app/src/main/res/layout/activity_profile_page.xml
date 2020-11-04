@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_back"
+    android:layout_gravity="center"
+    tools:context=".ProfilePage">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:enabled="true"
+        android:focusable="true"
+        android:id="@+id/ivPicture"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/ic_launcher_foreground"
+        app:civ_border_color="#FFFFFF"
+        app:civ_border_width="1dp"
+        android:clickable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <EditText
+        android:enabled="true"
+        android:focusable="true"
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/custom_person_orig"
+        android:drawablePadding="12dp"
+        android:hint="@string/name_val"
+        android:imeOptions="actionNext"
+        android:inputType="text"
+        android:padding="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivPicture" />
+
+    <EditText
+        android:enabled="true"
+        android:focusable="true"
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/custom_person"
+        android:drawablePadding="12dp"
+        android:hint="Email"
+        android:padding="20dp"
+        android:inputType="text"
+        android:imeOptions="actionNext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etName" />
+
+<!--    <EditText-->
+<!--        android:enabled="false"-->
+<!--        android:focusable="false"-->
+<!--        android:id="@+id/etPassword"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="60dp"-->
+<!--        android:layout_marginStart="20dp"-->
+<!--        android:layout_marginTop="25dp"-->
+<!--        android:layout_marginEnd="20dp"-->
+<!--        android:background="@drawable/custom_input"-->
+<!--        android:drawableStart="@drawable/custom_lock"-->
+<!--        android:drawablePadding="12dp"-->
+<!--        android:hint="@string/password_val"-->
+<!--        android:padding="20dp"-->
+<!--        android:inputType="textPassword"-->
+<!--        android:imeOptions="actionNext"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.0"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/etEmail" />-->
+
+    <EditText
+        android:enabled="true"
+        android:focusable="true"
+        android:id="@+id/etNumber"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/custom_phone"
+        android:drawablePadding="12dp"
+        android:hint="@string/phone_number"
+        android:padding="20dp"
+        android:inputType="phone"
+        android:imeOptions="actionNext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etEmail" />
+
+    <EditText
+        android:enabled="true"
+        android:focusable="true"
+        android:id="@+id/etAddress"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/custom_location"
+        android:drawablePadding="12dp"
+        android:hint="@string/address"
+        android:imeOptions="actionDone"
+        android:inputType="text"
+        android:padding="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etNumber" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:background="@drawable/gradient_back_2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="2dp"
+            android:id="@+id/profile"
+            android:clickable="true"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/person_val" />
+        <ImageView
+            android:layout_marginBottom="2dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginEnd="80dp"
+            android:layout_marginTop="6dp"
+            android:clickable="true"
+            android:id="@+id/home"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/home" />
+        <ImageView
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="6dp"
+            android:id="@+id/tasks"
+            android:clickable="true"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/task" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

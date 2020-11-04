@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Translyvania Services</string>
+    <string name="name">Username</string>
+    <string name="password_val">Password</string>
+    <string name="sign_in">Sign In</string>
+    <string name="not_a_user">Not a User?</string>
+    <string name="sign_up">Sign Up!</string>
+    <string name="username">Username</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="address">Address</string>
+    <string name="title_activity_button_page">ButtonPage</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="welcome">Welcome</string>
+    <string name="taxi_service">Taxi Service</string>
+    <string name="food_service">Food Service</string>
+    <string name="laundry_service">Laundry Service</string>
+    <string name="room_service">Room Service</string>
+    <string name="complaints">Complaints</string>
+    <string name="welcome_to_nhotel_transylvania">Welcome to\nHotel Transylvania\nServices</string>
+    <string name="verifying">Verifying OTP</string>
+    <string name="description">Description:</string>
+    <string name="complaint_hint">Explain Your Complaint Here...</string>
+    <string name="name_val">Name</string>
+    <string name="issue">Enter Issue</string>
+</resources>

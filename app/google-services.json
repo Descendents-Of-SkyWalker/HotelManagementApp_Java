@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "555509959486",
+    "firebase_url": "https://hotel-management-55b77.firebaseio.com",
+    "project_id": "hotel-management-55b77",
+    "storage_bucket": "hotel-management-55b77.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:555509959486:android:6b30908f039a1291cbba6f",
+        "android_client_info": {
+          "package_name": "com.skywalkers.hotelmanagement"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "555509959486-9n43f2ncnjvt6ngo02us71br568u917c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD2ss31Y41YFB7YAB3MMpmlDurnR8k8QC4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "555509959486-9n43f2ncnjvt6ngo02us71br568u917c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
